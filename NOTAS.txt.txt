@@ -1,0 +1,15 @@
+sockets 
+
+*** Para emitir un evento desde el servidor o desde el cliente
+   .emit('evento',payload?, callback?);
+
+*** Para estar a la escucha de los eventos
+    .on('evento',payload,callback?);
+
+*** Para emitir un evento a toos los clientes 
+	 io: SocketIO.Server
+	io.emit('evento',payload);
+
+*** Nota: cada ves que se refresca el navegador, se cierra o se cambia de pagina el cliente.id cambia.
+ 
+	
